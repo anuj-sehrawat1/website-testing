@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment App UI</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Payment</h1>
+      <p>Send money securely and easily.</p>
+    </header>
+
+    <div class="card">
+      <div class="card-header">
+        <span>Balance</span>
+        <h2>$1,250.00</h2>
+      </div>
+      <div class="card-body">
+        <div class="input-group">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="0.00">
+        </div>
+        <div class="input-group">
+          <label for="recipient">Recipient</label>
+          <input type="text" id="recipient" placeholder="Enter recipient's email">
+        </div>
+        <button class="pay-button">Pay Now</button>
+      </div>
+    </div>
+
+    <div class="transaction-history">
+      <h3>Recent Transactions</h3>
+      <ul>
+        <li>
+          <span class="transaction-icon">💳</span>
+          <div class="transaction-details">
+            <p>Payment to John Doe</p>
+            <small>March 15, 2025</small>
+          </div>
+          <span class="transaction-amount">-$50.00</span>
+        </li>
+        <li>
+          <span class="transaction-icon">💵</span>
+          <div class="transaction-details">
+            <p>Received from Jane Smith</p>
+            <small>March 14, 2025</small>
+          </div>
+          <span class="transaction-amount">+$200.00</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+            </html>
