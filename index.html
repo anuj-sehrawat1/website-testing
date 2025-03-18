@@ -3,58 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment App UI</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>AirPods Pro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h1>Payment</h1>
-      <p>Send money securely and easily.</p>
-    </header>
-
-    <div class="card">
-      <div class="card-header">
-        <span>Balance</span>
-        <h2>$1,250.00</h2>
-      </div>
-      <div class="card-body">
-        <div class="input-group">
-          <label for="amount">Amount</label>
-          <input type="number" id="amount" placeholder="0.00">
-        </div>
-        <div class="input-group">
-          <label for="recipient">Recipient</label>
-          <input type="text" id="recipient" placeholder="Enter recipient's email">
-        </div>
-        <button class="pay-button">Pay Now</button>
-      </div>
-    </div>
-
-    <div class="transaction-history">
-      <h3>Recent Transactions</h3>
-      <ul>
-        <li>
-          <span class="transaction-icon">💳</span>
-          <div class="transaction-details">
-            <p>Payment to John Doe</p>
-            <small>March 15, 2025</small>
-          </div>
-          <span class="transaction-amount">-$50.00</span>
-        </li>
-        <li>
-          <span class="transaction-icon">💵</span>
-          <div class="transaction-details">
-            <p>Received from Jane Smith</p>
-            <small>March 14, 2025</small>
-          </div>
-          <span class="transaction-amount">+$200.00</span>
-        </li>
+  <header>
+    <nav>
+      <div class="logo">AirPods Pro</div>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#buy">Buy Now</a></li>
       </ul>
-    </div>
-  </div>
+    </nav>
+  </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h1>AirPods Pro</h1>
+      <p>Magic like you've never heard.</p>
+      <a href="#buy" class="cta">Buy Now</a>
+    </div>
+    <div id="3d-container"></div>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>Active Noise Cancellation</h3>
+        <p>Block out the world.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Transparency Mode</h3>
+        <p>Hear the world around you.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Spatial Audio</h3>
+        <p>Immersive sound experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/airpods1.jpg" alt="AirPods Image 1">
+      <img src="images/airpods2.jpg" alt="AirPods Image 2">
+      <img src="images/airpods3.jpg" alt="AirPods Image 3">
+    </div>
+  </section>
+
+  <section id="buy" class="buy">
+    <h2>Buy Now</h2>
+    <p>Get your AirPods Pro today!</p>
+    <a href="https://www.apple.com/airpods" class="cta">Purchase</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 AirPods Pro. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
   <script src="script.js"></script>
 </body>
-            </html>
+    </html>
